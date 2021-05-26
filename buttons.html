@@ -34,9 +34,19 @@ Released under the MIT license: http://jsbin.mit-license.org
 </head>
 <body>
   <h1 class="font">Screen reader en toetsenbord toegankelijke knoppen</h1>
+  <!-- Deze knop werd met de standaard HTML button tag toegevoegd.
+       De knop is perfect bedienbaar met het zowel muis als toetsenbord en
+       word correct benoemd door screen readers.
+  -->
   <button class="button" onclick="showAlert()">Log in</button>
+
+  <!-- Deze knop werd met een div gemaakt. Hij kreeg dezelfde stijl, een role element
+       en tabindex mee. Hij is dus focusbaar, wordt door een screen reader voorgelezen
+       maar is met het toetsenbord niet te activeren.
+  -->
   <div class="button" tabindex="0" role="button" onclick="showAlert()">Log in</div>
-  
+
+  <!-- Kort stukje JS om de alertbox bij het klikken te tonen. -->
   <script>
   function showAlert() {
     alert ("je hebt op mij geklikt");
