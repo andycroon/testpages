@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-US">
+ <head>
+  <meta charset="utf-8">
+  <meta 
+      name="viewport" 
+      content="width=device-width, 
+               initial-scale=1">
+  <title>Testpage</title>
+ </head>
+ <body>
+  <header>
+   <nav aria-label="Main menu and search">
+    <ul>
+     <li>
+      <a href="#">Home</a>
+     </li>
+     <li>
+      <a href="#">About</a>
+     </li>
+     <li>
+      <a href="#">Media</a>
+     </li>
+     <li>
+      <a href="#">Support</a>
+     </li>
+    </ul>
+    <form>
+     <div>
+      <label for "sf">Search this site</label>
+     </div>
+     <div>
+      <input id="sf" name="search">
+      <input type="submit" value="search"
+     </div>
+    </form>
+   </nav>
+  </header>
+  <main>
+   <h1>Screenreader and keyboard tests</h1>
+   <h2> Testing header 2</h2>
+   <p>Testing a paragraph of text.</p>
+   <a aria-label="hidden" href="#">This link should be focusable but not read by a screenreader. This is a big no no!</a>
+   <p aria-hidden="true">This text should be hidden from screen readers.</p>
+   <h2> Form with fieldsets and autocomplete</h2>
+   <form>
+    <fieldset>
+     <legend>your Name and last name</legend>
+      <label for="first-name">First name</label>
+      <input type="text" label="first-name" id="first-name" autocomplete="give-name">
+      <label for="last-name">last name</label>
+      <input type="text" label="last-name" id="last-name" autocomplete="family-name">
+    </fieldset>
+   </form
+  </main>
+  <aside>
+  </aside>
+  <footer>
+  </footer>
+ </body>
+</html>
