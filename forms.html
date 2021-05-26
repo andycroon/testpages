@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by andycroon (http://jsbin.com/gececav/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulieren met fieldsets</title>
+<style id="jsbin-css">
+.button {
+  display: inline-block;  
+  background: purple;
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px
+}
+
+.font {
+  font-family: sans-serif;
+  }
+    
+</style>
+</head>
+  
+<body>
+  <h1 class="font">Formulier met fieldsets</h1>
+  <form class="font">
+    <fieldset>
+     <legend>Naam en voornaam</legend>
+      <label for="voornaam">Voornaam</label>
+      <input type="text" name="voornaam" id="voornaam" autocomplete="give-name">
+      <label for="achternaam">Achternaam</label>
+      <input type="text" name="achternaam" id="achternaam" autocomplete="family-name">
+    </fieldset>
+    <form>
+    <fieldset>
+     <legend>Geboorteplaats en datum</legend>
+      <label for="geboorteplaats">geboorteplaats</label>
+      <input type="text" name="geboorteplaats"id="geboorteplaats">
+      <label for="geboortedatum">geboortedatum</label>
+      <input type="date" name="geboortedatum" id="geboortedateum" autocomplete="bday">
+    </fieldset><br>
+      <button class="button">Inschrijven</button>
+   </form
+  </main>
+   </form
+  </main>
+</body>
+</html>
